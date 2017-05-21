@@ -5,6 +5,7 @@ metadata:
     service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
   name: {{ template "fullname" . }}
   labels:
+    project: mariadb-galera
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
     release: "{{ .Release.Name }}"

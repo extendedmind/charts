@@ -3,6 +3,7 @@ kind: StatefulSet
 metadata:
   name: {{ template "fullname" . }}
   labels:
+    project: mariadb-galera
     app: {{ template "fullname" . }}
     chart: "{{ .Chart.Name }}-{{ .Chart.Version }}"
     release: "{{ .Release.Name }}"
